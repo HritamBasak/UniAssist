@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "120386794045",
+    "project_id": "uniassist-18646",
+    "storage_bucket": "uniassist-18646.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120386794045:android:4e3e38880e483531dbf054",
+        "android_client_info": {
+          "package_name": "com.example.uniassist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5PfW8I0W5KToFe_kEgTCuhFuO-5N-Qb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TravelHelperActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/anek_bangla_semibold"
+            android:gravity="center"
+            android:text="TRAVEL HELPER"
+            android:textColor="#E7DDDD"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/anek_bangla_semibold"
+            android:gravity="center"
+            android:text="Welcome to TRAVEL HELPER.Seamlessly plan your journey to VIT University with our &quot;Travel to VIT&quot; feature."
+            android:textColor="#E7DDDD"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anek_bangla_semibold"
+                    android:text="1.PUBLIC TRANSPORT(Bus+Auto)"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/welcomeauto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/bus"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/anek_bangla_semibold"
+                    android:padding="5dp"
+                    android:text="First,take a Bus from the Vijaywada Railway Station to the Vijayawada Bus Depot(PNBS).You can find several city buses or auto-rickshaws that will take you there for a minimal fare of around ₹10 to 20.From the Vijayawada Bus Depot(PNBS),board a bus heading to the Secretariate from terminals 41 or 42.The bus fare is ₹35.Once you arrive at the Secretariate,hire an auto rickshaw to VIT-AP Campus.The fare for the auto-rickshaw will range from ₹20 to First,take a Bus from the Vijaywada Railway Station to the Vijayawada Bus Depot(PNBS).You can find several city buses or auto-rickshaws that will take you there for a minimal fare of around ₹10 to 20.From the Vijayawada Bus Depot(PNBS),board a bus heading to the Secretariate from terminals 41 or 42.The bus fare is ₹35.Once you arrive at the Secretariate,hire an auto rickshaw to VIT-AP Campus.The fare for the auto-rickshaw will range from ₹20 to ₹50 per person."
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/anek_bangla_semibold"
+                    android:padding="5dp"
+                    android:text="Duration:This combined journey will take approximately 1.5 to 2 hours."
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anek_bangla_semibold"
+                    android:text="2.AUTO RICKSHAW"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/auto"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/anek_bangla_semibold"
+                    android:padding="5dp"
+                    android:text="Another Option is to hire an auto-rickshaw.Fare:₹300 to ₹600,depending on your negotiation skills and traffic conditions.Duration:Approximately 1 hour."
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anek_bangla_semibold"
+                    android:text="3.TAXI OR CAB"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/welcometaxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/taxi"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/windshow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/anek_bangla_semibold"
+                    android:padding="5dp"
+                    android:text="The most convenient option is to take a taxi or a cab directly from the railway station to the VIT-AP Campus.Fare:₹300 to ₹800,depending on the time of day,traffic conditions,and the type of cab service you choose.Duration:Approximately 45 minutes to 1 hour,From the Airport,it might cost upto ₹1200 depending upon the service you choose and your negotiation skills."
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/anek_bangla_semibold"
+                android:padding="5dp"
+                android:text="IMPORTANT TIPS:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/anek_bangla_semibold"
+                android:padding="5dp"
+                android:text="Always check for the most convenient and cost-effective options based on your arrival time and budget.Ensure to negotiate the fare with auto auto_rickshaw drivers befiore starting the journey.For the most comfortable and hassle-free journey,pree-book a taxi or use  ride-hailing areas like Ola or Uber"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
