@@ -30,7 +30,7 @@ public class PreviousYearsPapers extends AppCompatActivity {
             return insets;
         });
         binding.webView.getSettings().setJavaScriptEnabled(true);
-        binding.webView.loadUrl("http://172.18.8.72:8080/jspui/");
+        binding.webView.loadUrl("https://vit.ac.in/cdc-highlights");
         binding.webView.setWebViewClient(new WebViewClient() {
             @Override
             public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {

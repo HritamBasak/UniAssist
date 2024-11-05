@@ -88,7 +88,7 @@
                 android:gravity="center"
                 android:hint="Enter Credit"
                 android:inputType="numberDecimal"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <EditText
                 android:id="@+id/grade1"
@@ -99,7 +99,7 @@
                 android:gravity="center"
                 android:hint="Enter Grade(S,A,B,C,D,E,F)"
                 android:inputType="text"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -116,7 +116,7 @@
                 android:gravity="center"
                 android:hint="Enter Credit"
                 android:inputType="numberDecimal"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <EditText
                 android:id="@+id/grade2"
@@ -127,7 +127,7 @@
                 android:gravity="center"
                 android:hint="Enter Grade(S,A,B,C,D,E,F)"
                 android:inputType="text"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -144,7 +144,7 @@
                 android:gravity="center"
                 android:hint="Enter Credit"
                 android:inputType="numberDecimal"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <EditText
                 android:id="@+id/grade3"
@@ -155,7 +155,7 @@
                 android:gravity="center"
                 android:hint="Enter Grade(S,A,B,C,D,E,F)"
                 android:inputType="text"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
         </LinearLayout>
 
@@ -174,7 +174,7 @@
                 android:gravity="center"
                 android:hint="Enter Credit"
                 android:inputType="numberDecimal"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <EditText
                 android:id="@+id/grade4"
@@ -185,7 +185,7 @@
                 android:gravity="center"
                 android:hint="Enter Grade(S,A,B,C,D,E,F)"
                 android:inputType="text"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -202,7 +202,7 @@
                 android:gravity="center"
                 android:hint="Enter Credit"
                 android:inputType="numberDecimal"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <EditText
                 android:id="@+id/grade5"
@@ -213,7 +213,7 @@
                 android:gravity="center"
                 android:hint="Enter Grade(S,A,B,C,D,E,F)"
                 android:inputType="text"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -230,7 +230,7 @@
                 android:gravity="center"
                 android:hint="Enter Credit"
                 android:inputType="numberDecimal"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <EditText
                 android:id="@+id/grade6"
@@ -241,7 +241,7 @@
                 android:gravity="center"
                 android:hint="Enter Grade(S,A,B,C,D,E,F)"
                 android:inputType="text"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -258,7 +258,7 @@
                 android:gravity="center"
                 android:hint="Enter Credit"
                 android:inputType="numberDecimal"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <EditText
                 android:id="@+id/grade7"
@@ -269,7 +269,7 @@
                 android:gravity="center"
                 android:hint="Enter Grade(S,A,B,C,D,E,F)"
                 android:inputType="text"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -286,7 +286,7 @@
                 android:gravity="center"
                 android:hint="Enter Credit"
                 android:inputType="numberDecimal"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <EditText
                 android:id="@+id/grade8"
@@ -297,7 +297,7 @@
                 android:gravity="center"
                 android:hint="Enter Grade(S,A,B,C,D,E,F)"
                 android:inputType="text"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -315,7 +315,7 @@
                 android:gravity="center"
                 android:hint="Enter Credit"
                 android:inputType="numberDecimal"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <EditText
                 android:id="@+id/grade9"
@@ -327,7 +327,7 @@
                 android:gravity="center"
                 android:hint="Enter Grade(S,A,B,C,D,E,F)"
                 android:inputType="text"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
 

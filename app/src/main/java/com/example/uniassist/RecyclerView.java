@@ -8,7 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;import com.example.uniassist.databinding.ActivityRecyclerViewBinding;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -39,24 +41,30 @@ public class RecyclerView extends AppCompatActivity {
 
         binding.rv.setLayoutManager(new LinearLayoutManager(this));
         todoList = new ArrayList<>();
-        adapter = new AdapterTodoList(todoList);
+        adapter = new AdapterTodoList(todoList, this);
         binding.rv.setAdapter(adapter);
 
+        ItemTouchHelper touchHelper = new ItemTouchHelper(new TouchHelper(adapter));
+        touchHelper.attachToRecyclerView(binding.rv);
+
         FirebaseDatabase.getInstance().getReference().child("TodoList")
+                .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        todoList.clear(); // Clear the list before adding new data
+                        todoList.clear();
                         for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                             ModelTodoList model = dataSnapshot.getValue(ModelTodoList.class);
-                            todoList.add(model);
+                            if (model != null) {
+                                model.setKey(dataSnapshot.getKey()); // Set the key here
+                                todoList.add(model);
+                            }
                         }
                         adapter.notifyDataSetChanged();
                     }
 
                     @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-                        // Handle errors
+                    public void onCancelled(@NonNull DatabaseError error) {// Handle errors
                     }
                 });
     }

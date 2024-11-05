@@ -62,11 +62,11 @@ public class HomeFragment extends Fragment {
 
         ArrayList<MyModel> list=new ArrayList<>();
         list.add(new MyModel(R.drawable.calcu,"CGPA CALCULATOR","Simplify your academic performance tracking with our intuitive CGPA Calculator. Designed to make your life easier, this tool allows you to calculate your Cumulative Grade Point Average (CGPA) effortlessly based on your course credits and grades"));
-        list.add(new MyModel(R.drawable.newss,"VIT-AP UPDATES","Stay informed and up-to-date with the latest news and announcements from VIT-AP University. The section brings you real-time information on everything happening at the university, ensuring you never miss important events or changes."));
+        list.add(new MyModel(R.drawable.newss,"VIT-AP NEWS","Stay informed and up-to-date with the latest news and announcements from VIT-AP University. The section brings you real-time information on everything happening at the university, ensuring you never miss important events or changes."));
         list.add(new MyModel(R.drawable.plane,"MAP TO TRAVEL ANYWHERE","Navigate anywhere with ease using our feature. Whether you’re exploring a new city, planning a road trip, or simply finding your way around campus, this powerful map tool has you covered."));
         list.add(new MyModel(R.drawable.info,"TRAVEL HELPER","Seamlessly plan your journey to VIT-AP University with our feature. Designed to make your arrival at VIT hassle-free, this tool provides all the information you need for a smooth travel experience."));
         list.add(new MyModel(R.drawable.task,"LIST YOUR WORKS","Stay organized and on top of your academic and personal tasks with our “To-Do List for Students” feature. Designed specifically for student life, this tool helps you manage your assignments, deadlines, and daily responsibilities efficiently."));
-        list.add(new MyModel(R.drawable.question,"UNLOCK PAST PAPERS","Explore an Extensive Collection of Past Exam Papers: Your Ultimate Resource for In-Depth Study and Exam Preparation"));
+        list.add(new MyModel(R.drawable.team,"PLACEMENT UPDATES","Stay updated with the latest placement opportunities and career developments. Our placement updates provide real-time information on upcoming job fairs, internship openings, employer visits, and recruitment drives, ensuring you never miss out on key opportunities to advance your career"));
         MyAdapter adapter=new MyAdapter(list,getContext());
         binding.recyclerView.setAdapter(adapter);
 

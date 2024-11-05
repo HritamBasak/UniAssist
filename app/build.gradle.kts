@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.uniassist"
-        minSdk = 24
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -49,9 +49,12 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.volley)
     implementation (libs.lottie)
+    implementation (libs.recyclerview.swipedecorator)
     implementation ("com.google.android.gms:play-services-maps:19.0.0")
     implementation(libs.firebase.database)
     implementation (libs.firebase.ui.database)
+    implementation(libs.firebase.auth)
+    implementation(libs.car.ui.lib)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

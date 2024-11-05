@@ -90,6 +90,10 @@ public class WeatherFragment extends Fragment {
     public void getData() {
         String api = "0d9a972d0ef6d982113a5c13f2ba45d1";
         String city = binding.editcityname.getText().toString();
+        if(city.isEmpty())
+        {
+            Toast.makeText(getActivity(),"Please Enter City Name",Toast.LENGTH_SHORT).show();
+        }
         String url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + api;RequestQueue queue = Volley.newRequestQueue(requireActivity().getApplicationContext());
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override

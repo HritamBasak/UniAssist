@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/anek_bangla_semibold"
             android:gravity="center"
-            android:text="VIT-AP UPDATES"
+            android:text="VIT-AP NEWS"
             android:textColor="#E7DDDD"
             android:textStyle="bold" />
 

@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/alegreya_sans_sc_extrabold"
             android:gravity="center"
-            android:text="UNLOCK PAST PAPERS"
+            android:text="PLACEMENT UPDATES"
             android:textColor="#F8F0F0" />
 
         <TextView
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/alata"
             android:gravity="center"
-            android:text="Master Past Exams with Our Extensive Archive of Previous Years' Papers"
+            android:text="Get the Latest Placement News: Timely Updates on Job Fairs, Internships, and Recruitment Opportunities"
             android:textColor="#F2E9E9" />
     </LinearLayout>
 

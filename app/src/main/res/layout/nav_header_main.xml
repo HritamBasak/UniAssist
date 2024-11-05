@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/gr"
+    android:background="@drawable/backg"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -14,10 +14,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:background="@drawable/studenthat"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/overload"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing" />
 
@@ -25,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:fontFamily="@font/alata"
+        android:fontFamily="@font/alegreya_sans_sc_extrabold"
         android:foregroundGravity="center"
         android:gravity="center"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -33,5 +34,15 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#0F0C0C"
         android:textSize="15dp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvshowww"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:gravity="center"-->
+<!--        android:minHeight="20dp"-->
+<!--        android:textColor="#090808" />-->
 
 </LinearLayout>

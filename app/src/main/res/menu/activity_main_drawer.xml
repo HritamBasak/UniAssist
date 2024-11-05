@@ -14,11 +14,6 @@
             android:title="Weather Report"
             android:menuCategory="secondary"/>
 
-        <item
-            android:id="@+id/news"
-            android:icon="@drawable/newsp"
-            android:title="News"
-            android:menuCategory="secondary"/>
     </group>
 
     <item android:title="Others"
@@ -31,10 +26,16 @@
            android:menuCategory="secondary"
            android:actionLayout="@layout/menu_item_switch"/>
        <item
-           android:id="@+id/nav_slideshow"
+           android:id="@+id/morefragment"
            android:icon="@drawable/more"
+           android:actionLayout="@layout/fragment_more"
            android:menuCategory="secondary"
            android:title="More" />
+       <item
+           android:id="@+id/signoutfragment"
+           android:icon="@drawable/out"
+           android:menuCategory="secondary"
+           android:title="Sign Out" />
    </menu>
 
 
