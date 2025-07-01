@@ -206,7 +206,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#03A9F4"
+        android:backgroundTint="#000000"
         android:text="Send FeedBack"
         android:textColorHint="#03A9F4" />
 
