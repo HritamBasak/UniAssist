@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         Toolbar toolbar=findViewById(R.id.toolbar);
-        toolbar.setBackgroundColor(ContextCompat.getColor(this,R.color.blue));
+        toolbar.setBackgroundColor(ContextCompat.getColor(this,R.color.black));
         setSupportActionBar(binding.appBarMain.toolbar);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

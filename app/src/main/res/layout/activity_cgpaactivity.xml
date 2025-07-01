@@ -1,360 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".CGPAActivity">
+    android:background="@color/white">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/cgpacalcbackground"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="5dp">
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-        <TextView
-            android:id="@+id/textView3"
+        <LinearLayout
+            android:id="@+id/mainLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/alegreya_sans_sc_extrabold"
-            android:gravity="center"
-            android:text="CGPA CALCULATOR"
-            android:textColor="#F8F0F0" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/alata"
-            android:gravity="center"
-            android:text="Calculate and Monitor Your CGPA with Precision"
-            android:textColor="#F2E9E9" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="1"
-            android:background="@drawable/backgroundcredits"
-            android:fontFamily="@font/alegreya_sans_sc_extrabold"
-            android:gravity="center"
-            android:text="CREDITS"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="1"
-            android:background="@drawable/backgroundcredits"
-            android:fontFamily="@font/alegreya_sans_sc_extrabold"
-            android:gravity="center"
-            android:text="GRADE"
-            android:textSize="30sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/backgroundcredits"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/credit1"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
+            <!-- Headline -->
+            <TextView
+                android:id="@+id/headline"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="4dp"
+                android:background="#000000"
+                android:fontFamily="@font/alegreya_sans_sc_extrabold"
                 android:gravity="center"
-                android:hint="Enter Credit"
-                android:inputType="numberDecimal"
-                android:textSize="12sp" />
+                android:text="Welcome to the CGPA Calculator"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/grade1"
-                android:layout_width="50dp"
+            <!-- Description -->
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alata"
                 android:gravity="center"
-                android:hint="Enter Grade(S,A,B,C,D,E,F)"
-                android:inputType="text"
-                android:textSize="12sp" />
-        </LinearLayout>
+                android:text="Easily add your course credits and grades to calculate your CGPA accurately. Add as many subjects as needed."
+                android:textColor="#757575"
+                android:textSize="16sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/credit2"
-                android:layout_width="50dp"
+            <!-- Dynamic Rows Container -->
+            <LinearLayout
+                android:id="@+id/inputContainer"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Credit"
-                android:inputType="numberDecimal"
-                android:textSize="12sp" />
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical" />
 
-            <EditText
-                android:id="@+id/grade2"
-                android:layout_width="50dp"
+            <!-- Add Row Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addRowButton"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Grade(S,A,B,C,D,E,F)"
-                android:inputType="text"
-                android:textSize="12sp" />
-        </LinearLayout>
+                android:backgroundTint="@color/teal_700"
+                android:icon="@drawable/resize_ic_add"
+                android:iconTint="@android:color/white"
+                android:text="Add Credit-Grade Row"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/credit3"
-                android:layout_width="50dp"
+            <!-- Calculate Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/calculateButton"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Credit"
-                android:inputType="numberDecimal"
-                android:textSize="12sp" />
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/purple_700"
+                android:text="Calculate CGPA"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp" />
 
-            <EditText
-                android:id="@+id/grade3"
-                android:layout_width="50dp"
+            <!-- Result -->
+            <TextView
+                android:id="@+id/cgpaResult"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:hint="Enter Grade(S,A,B,C,D,E,F)"
-                android:inputType="text"
-                android:textSize="12sp" />
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/remarksResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearlayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/credit4"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Credit"
-                android:inputType="numberDecimal"
-                android:textSize="12sp" />
-
-            <EditText
-                android:id="@+id/grade4"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Grade(S,A,B,C,D,E,F)"
-                android:inputType="text"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/credit5"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Credit"
-                android:inputType="numberDecimal"
-                android:textSize="12sp" />
-
-            <EditText
-                android:id="@+id/grade5"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Grade(S,A,B,C,D,E,F)"
-                android:inputType="text"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/credit6"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Credit"
-                android:inputType="numberDecimal"
-                android:textSize="12sp" />
-
-            <EditText
-                android:id="@+id/grade6"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Grade(S,A,B,C,D,E,F)"
-                android:inputType="text"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/credit7"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Credit"
-                android:inputType="numberDecimal"
-                android:textSize="12sp" />
-
-            <EditText
-                android:id="@+id/grade7"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Grade(S,A,B,C,D,E,F)"
-                android:inputType="text"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/credit8"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Credit"
-                android:inputType="numberDecimal"
-                android:textSize="12sp" />
-
-            <EditText
-                android:id="@+id/grade8"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Grade(S,A,B,C,D,E,F)"
-                android:inputType="text"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/credit9"
-                android:layout_width="20dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Credit"
-                android:inputType="numberDecimal"
-                android:textSize="12sp" />
-
-            <EditText
-                android:id="@+id/grade9"
-                android:layout_width="20dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Enter Grade(S,A,B,C,D,E,F)"
-                android:inputType="text"
-                android:textSize="12sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/find"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/go" />
-
-    <TextView
-        android:id="@+id/cgpashow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="2dp"
-        android:fontFamily="@font/alegreya_sans_sc_extrabold"
-        android:gravity="center"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/remarksshow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/alegreya_sans_sc_extrabold"
-        android:gravity="center" />
-
-
-</LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

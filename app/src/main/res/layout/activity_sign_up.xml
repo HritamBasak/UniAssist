@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/signupbackground"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/signup"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/anek_bangla_semibold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter your information to register with UniAssist"
+                android:textSize="16sp"
+                android:textColor="#EDEDED"
+                android:fontFamily="@font/anek_bangla_semibold"
+                android:gravity="center"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- Section Title -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up with Email"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:fontFamily="@font/anek_bangla_semibold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/etuserName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:background="@drawable/emailtextbackground"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/anek_bangla_semibold" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/emailtextbackground"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/anek_bangla_semibold" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/emailtextbackground"
+            android:padding="14dp"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="@font/anek_bangla_semibold" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/anek_bangla_semibold"
+            android:backgroundTint="#2196F3"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Already Have Account -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="14sp"
+                android:textColor="#555555" />
+
+            <TextView
+                android:id="@+id/tvAlreadyhaveAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sign In"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"
+                android:paddingStart="4dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/anek_bangla_semibold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
